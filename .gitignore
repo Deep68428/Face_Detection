@@ -1,0 +1,54 @@
+# IDE & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+.env
+
+# Frontend
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+.eslintcache
+
+# AI Engine Data (Machine_code)
+/Machine_code/Detection_Logs/
+/Machine_code/Detection_Logs_Images/
+/Machine_code/Face_Database/
+/Machine_code/snapshots/
+/Machine_code/dataset/
+/Machine_code/config/dec25_jan26/
+/Machine_code/config/*.faiss
+/Machine_code/config/*.pkl
+/Machine_code/config/*.tmp
+/Machine_code/*.log
+/Machine_code/ai_engine.log
+/Machine_code/create_embeddings.log
+
+# Global Data/Media (Excluded from Git)
+*.log
+*.xlsx
+*.csv
+*.xls
+*.jpg
+*.jpeg
+*.png
+!/frontend/public/logo.jpg
+!/frontend/public/favicon.ico
+*.bmp
+*.webp
+*.gif
+/bk/

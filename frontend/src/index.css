@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 228 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 228 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 228 20% 10%;
+
+    --primary: 243 100% 75%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 228 20% 10%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 228 10% 46%;
+
+    --accent: 243 60% 95%;
+    --accent-foreground: 243 80% 55%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 243 100% 75%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 10% 98%;
+    --sidebar-foreground: 228 15% 30%;
+    --sidebar-primary: 243 100% 75%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 243 60% 95%;
+    --sidebar-accent-foreground: 243 80% 55%;
+    --sidebar-border: 240 6% 92%;
+    --sidebar-ring: 243 100% 75%;
+
+    --success: 152 60% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 210 80% 55%;
+    --info-foreground: 0 0% 100%;
+
+    --chart-1: 243 100% 75%;
+    --chart-2: 152 60% 45%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 210 80% 55%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card border border-border rounded-lg shadow-sm;
+  }
+  .status-active {
+    @apply bg-emerald-50 text-emerald-700 border-emerald-200;
+  }
+  .status-inactive {
+    @apply bg-red-50 text-red-600 border-red-200;
+  }
+  .status-warning {
+    @apply bg-amber-50 text-amber-700 border-amber-200;
+  }
+  .status-error {
+    @apply bg-red-50 text-red-600 border-red-200;
+  }
+  .status-new {
+    @apply bg-blue-50 text-blue-700 border-blue-200;
+  }
+  .status-reviewed {
+    @apply bg-amber-50 text-amber-700 border-amber-200;
+  }
+  .status-assigned {
+    @apply bg-emerald-50 text-emerald-700 border-emerald-200;
+  }
+  .animate-skeleton {
+    @apply animate-pulse bg-muted rounded;
+  }
+}
